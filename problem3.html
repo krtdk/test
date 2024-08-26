@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <input type="text" id="aaa" />
+    <button>클릭</button>
+    <button id="btn">클릭</button>
+    <div id='bbb'></div>
+    <script>
+        const button = document.querySelector('#btn');
+        button.addEventListener('click', () => {
+
+            const vv = document.getElementById('aaa');
+            console.log(vv.value);
+            const div = document.getElementById('bbb');
+            const div2 = document.createElement('div');
+            const p = document.createElement('p');
+
+            p.innerText = vv.value;
+
+        });
+
+    </script>
+</body>
+
+</html>
